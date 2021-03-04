@@ -1,0 +1,214 @@
+body{
+   position: relative;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+  
+}
+.instructions{
+    border-style: none;
+    border-width: 0.5px;
+    padding: 50px;
+    justify-self: end;
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
+    font-size: 12px;
+    width: 500px;
+
+}
+h1{
+    font-family: 'Inconsolata', monospace;
+    font-size:20px;
+}
+h2{
+    font-family: 'Inconsolata', monospace;
+    color: #ebebeb;
+    justify-self: center;
+    font-weight: lighter;
+    font-size: 20px;
+    font-size:12px;
+    
+}
+.container{
+    max-width: 300px;
+    max-height:340px ;
+    display: grid;
+    grid-template-columns: 500px;
+    justify-items: stretch;
+    background-color:#050505;
+    justify-self: start;
+    justify-content: center;
+    padding-bottom: 60px;
+    border-style:groove;
+    border-width: 2px;
+    border-color: #222121;
+    position: relative;
+    border-radius: 20px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.display{
+    color: #202124;
+    font-size: medium;
+    font-weight: normal;
+    line-height: 1;
+    direction: ltr;
+    padding: 10px 14px 0 10px;
+    box-sizing: border-box;
+    margin-bottom:30px;
+    justify-content: center;
+    width: 50%;
+    height: 63px;
+    grid-column:span ;
+    justify-self:center;
+    background-color:rgb(113,116,106);
+    border-radius: 10px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,11.5%);
+    grid-template-rows: repeat(5,20%);
+    grid-gap:5px;   
+    justify-items: stretch;
+    justify-content: center;
+    color: #ebebeb;
+    
+
+}
+
+.button{
+    font-weight: normal;
+    font-size: 15px;
+    object-fit:cover;
+    cursor: pointer;
+    font-family: monospace;
+    text-align: center;
+    line-height: 34px;
+    position: relative;
+    color:#dad8d8;
+    border-style: none;
+    border-radius: 80px;
+    background-color:rgba(194, 194, 199, 0.5);
+    transition: all .05s ease-out;
+    }
+.button:focus{
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow:inset 1px 1px 2px 1px rgb(49, 48, 48);
+    font-size: 12px;
+    border-width: thin;
+    border-color: rgba(50, 50, 51, 0.5);
+    outline-style:none;
+    outline-width: 0px;
+}
+
+.buttonBlue{
+    font-weight: normal;
+    direction: ltr;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: monospace;
+    text-align: center;
+    line-height: 34px;
+    position: relative;
+    color: #dad8d8;
+    border-style: none;
+    border-radius: 80px;
+    background-color:rgba(22, 104, 185, 0.5);
+    transition: all .05s ease-out;
+   
+}
+.buttonBlue:focus{
+    box-shadow:inset 1px 1px 2px 1px rgb(1, 28, 87);
+    font-size: 12px;
+    border-width: thin;
+    border-color: rgba(50, 50, 51, 0.5);
+    outline-style:none;
+    outline-width: 0px;
+    color:white;
+}
+.buttonEnter{
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: monospace;
+    text-align: center;
+    line-height: 34px;
+    position: relative;
+    color: #dad8d8;;
+    border-style: none;
+    border-radius: 80px;
+    background-color:rgb(126, 3, 3);
+    grid-row: 3/6;
+    grid-column: 4;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+}
+.buttonEnter:focus{
+    box-shadow:inset 1px 1px 2px 1px rgb(82, 7, 7);
+    font-size: 13px;
+    border-width: thin;
+    border-color: rgba(50, 50, 51, 0.5);
+    outline-style:none;
+    outline-width: 0px;
+    color:white;
+}
+.buttonFloat{
+    font-weight: normal;
+    font-size: 15px;
+    object-fit:cover;
+    cursor: pointer;
+    font-family: monospace;
+    text-align: center;
+    line-height: 34px;
+    position: relative;
+    color:#dad8d8;
+    border-style: none;
+    border-radius: 80px;
+    background-color:rgba(194, 194, 199, 0.5);
+    
+    }
+.buttonFloat:focus{
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow:inset 1px 1px 2px 1px rgb(49, 48, 48);
+    font-size: 12px;
+    border-width: thin;
+    border-color: rgba(50, 50, 51, 0.5);
+    outline-style:none;
+    outline-width: 0px;
+
+}
+
+
+.calc{
+    font-weight: normal;
+    line-height: 1;
+    font-size: 15px;
+    width: 100%;
+    height: 15px;
+    text-align: right;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 800;
+    float: right;
+    margin-top: 3px;
+    right: 0px;
+}
+
+.event{
+    font-weight:regular ;
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 500;
+    color: unset;
+    float: right;
+    font-family:'Inconsolata', monospace;;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    height: 30px;
+    text-align: end;
+    width: 100%;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: scroll;
+}
