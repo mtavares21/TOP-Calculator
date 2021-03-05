@@ -2,8 +2,13 @@ body{
    position: relative;
    display: grid;
    grid-template-columns: 50% 50%;
+   justify-content: center;
+   justify-items: center;
+   justify-self: center;
    align-items: center;
-  
+   margin-top: 50px;
+   width: 100%;
+   
 }
 .instructions{
     border-style: none;
@@ -14,7 +19,10 @@ body{
     text-align: justify;
     font-size: 12px;
     width: 500px;
-
+    justify-self: center;
+    margin-left: ;
+    margin-right: 25%;
+    padding: 0px;
 }
 h1{
     font-family: 'Inconsolata', monospace;
@@ -36,7 +44,7 @@ h2{
     grid-template-columns: 500px;
     justify-items: stretch;
     background-color:#050505;
-    justify-self: start;
+    justify-self: center;
     justify-content: center;
     padding-bottom: 60px;
     border-style:groove;
@@ -44,8 +52,8 @@ h2{
     border-color: #222121;
     position: relative;
     border-radius: 20px;
-    margin-left:auto ;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .display{
